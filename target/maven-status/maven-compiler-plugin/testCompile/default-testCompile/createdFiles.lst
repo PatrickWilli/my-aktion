@@ -1,0 +1,10 @@
+myaktion\test\DataFactory.class
+myaktion\test\pages\EditCampaignPage.class
+myaktion\test\SetupDatabase.class
+myaktion\test\pages\AbstractPage.class
+myaktion\test\AbstractITCase.class
+myaktion\test\pages\DonateMoneyPage.class
+myaktion\test\DonateMoneyITCase.class
+myaktion\test\EditCampaignITCase.class
+myaktion\test\pages\ListCampaignsPage.class
+myaktion\test\pages\EditDonationFormPage.class
