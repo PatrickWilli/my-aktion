@@ -21,6 +21,7 @@
         <systemPath>C:\Program Files\Java\jdk1.8.0_101\lib\jconsole.jar</systemPath>
     </dependency>
   	end Jconsole dependency -->
+  	<!-- https://mvnrepository.com/artifact/org.jboss.weld/weld-core -->
 		<dependency>
 			<groupId>javax</groupId>
 			<artifactId>javaee-api</artifactId>
@@ -65,6 +66,12 @@
 			<version>8.2.1.Final</version>
 			<scope>test</scope>
 		</dependency>
+	<!-- https://mvnrepository.com/artifact/org.wildfly/wildfly-weld -->
+<dependency>
+    <groupId>org.wildfly</groupId>
+    <artifactId>wildfly-weld</artifactId>
+    <version>10.0.0.Final</version>
+</dependency>
 	</dependencies>
 	<build>
 		<finalName>my-aktion</finalName>
@@ -73,6 +80,11 @@
 				<groupId>org.wildfly.plugins</groupId>
 				<artifactId>wildfly-maven-plugin</artifactId>
 				<version>1.1.0.Final</version>
+				<!-- Wildfly wants an password now! -.- -->
+				<configuration>
+					<username>admin</username>
+					<password>12345678</password>
+				</configuration>
 			</plugin>
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
